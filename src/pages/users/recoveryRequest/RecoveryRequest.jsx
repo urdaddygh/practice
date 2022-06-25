@@ -14,50 +14,21 @@ export const RecoveryRequest = () => {
       <Link to="/main/users/recoveryRequest/recoveryInfo">
         <div className={s.title}>
           <p className={s.first_p}>1</p>
-          <p>Admin111@gmal.com </p>
+          <p>aziret014@gmal.com </p>
           <p className={s.last_p}>Помогите, пожалуйста, восстановить пароль</p>
         </div>
       </Link>
       <Link to="/main/users/recoveryRequest/recoveryInfo">
         <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Admin111@gmal.com </p>
+          <p className={s.first_p}>2</p>
+          <p>azamat@gmal.com </p>
           <p className={s.last_p}>Помогите, пожалуйста, восстановить пароль</p>
         </div>
       </Link>
       <Link to="/main/users/recoveryRequest/recoveryInfo">
         <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Admin111@gmal.com </p>
-          <p className={s.last_p}>Помогите, пожалуйста, восстановить пароль</p>
-        </div>
-      </Link>
-      <Link to="/main/users/recoveryRequest/recoveryInfo">
-        <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Admin111@gmal.com </p>
-          <p className={s.last_p}>Помогите, пожалуйста, восстановить пароль</p>
-        </div>
-      </Link>
-      <Link to="/main/users/recoveryRequest/recoveryInfo">
-        <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Admin111@gmal.com </p>
-          <p className={s.last_p}>Помогите, пожалуйста, восстановить пароль</p>
-        </div>
-      </Link>
-
-      <Link to="/main/users/recoveryRequest/recoveryInfo">
-        <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Admin111@gmal.com </p>
-          <p className={s.last_p}>Помогите, пожалуйста, восстановить пароль</p>
-        </div>
-      </Link>
-      <Link to="/main/users/recoveryRequest/recoveryInfo">
-        <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Admin111@gmal.com </p>
+          <p className={s.first_p}>3</p>
+          <p>marin@gmal.com </p>
           <p className={s.last_p}>Помогите, пожалуйста, восстановить пароль</p>
         </div>
       </Link>

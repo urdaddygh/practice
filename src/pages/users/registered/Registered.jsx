@@ -33,62 +33,62 @@ export const Registered = () => {
       </Link>
       <Link to="/main/users/registered/userInfo">
         <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Карина</p>
-          <p>Белоусова</p>
-          <p>Портер</p>
-          <p>A212FG</p>
-          <p>Голубой</p>
+          <p className={s.first_p}>2</p>
+          <p>Ислам</p>
+          <p>Мамбетакунов</p>
+          <p>Зил</p>
+          <p>С3212Т</p>
+          <p>Чёрный</p>
         </div>
       </Link>
       <Link to="/main/users/registered/userInfo">
         <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Карина</p>
-          <p>Белоусова</p>
+          <p className={s.first_p}>3</p>
+          <p>Арарат</p>
+          <p>Медоусов</p>
           <p>Портер</p>
-          <p>A212FG</p>
-          <p>Голубой</p>
+          <p>Е21421К</p>
+          <p>Красный</p>
         </div>
       </Link>
       <Link to="/main/users/registered/userInfo">
         <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Карина</p>
-          <p>Белоусова</p>
+          <p className={s.first_p}>4</p>
+          <p>Ырыс</p>
+          <p>Чынгызов</p>
           <p>Портер</p>
-          <p>A212FG</p>
-          <p>Голубой</p>
+          <p>О2341Д</p>
+          <p>Белый</p>
         </div>
       </Link>
       <Link to="/main/users/registered/userInfo">
         <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Карина</p>
-          <p>Белоусова</p>
+          <p className={s.first_p}>5</p>
+          <p>Александр</p>
+          <p>Михайлов</p>
           <p>Портер</p>
-          <p>A212FG</p>
-          <p>Голубой</p>
+          <p>У2321Ф</p>
+          <p>Синий</p>
         </div>
       </Link>
       <Link to="/main/users/registered/userInfo">
         <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Карина</p>
-          <p>Белоусова</p>
+          <p className={s.first_p}>6</p>
+          <p>Джон</p>
+          <p>Мартышов</p>
           <p>Портер</p>
-          <p>A212FG</p>
-          <p>Голубой</p>
+          <p>Л2321Д</p>
+          <p>Белый</p>
         </div>
       </Link>
       <Link to="/main/users/registered/userInfo">
         <div className={s.title}>
-          <p className={s.first_p}>1</p>
-          <p>Карина</p>
-          <p>Белоусова</p>
+          <p className={s.first_p}>7</p>
+          <p>Кутман</p>
+          <p>Маратов</p>
           <p>Портер</p>
-          <p>A212FG</p>
-          <p>Голубой</p>
+          <p>Д2345Т</p>
+          <p>Белый</p>
         </div>
       </Link>
       

@@ -31,6 +31,39 @@ const DefaultClubs = () => {
                         <p>Портер</p>
                     </div>
                 </Link>
+                <Link to="/main/clubs/clubDetails">
+                    <div className={s.title}>
+                        <p className={s.first_p}>1</p>
+                        <p>Медет</p>
+                        <p>Азирет</p>
+                        <p>Бишкек, Джал 23 кв 24</p>
+                        <p>3000 сом</p>
+                        <p>Одежда</p>
+                        <p>Портер</p>
+                    </div>
+                </Link>
+                <Link to="/main/clubs/clubDetails">
+                    <div className={s.title}>
+                        <p className={s.first_p}>1</p>
+                        <p>Екатерина</p>
+                        <p>Ислам</p>
+                        <p>Бишкек, 5 мкр 23 99</p>
+                        <p>5000 сом</p>
+                        <p>Строительные материалы</p>
+                        <p>Портер</p>
+                    </div>
+                </Link>
+                <Link to="/main/clubs/clubDetails">
+                    <div className={s.title}>
+                        <p className={s.first_p}>1</p>
+                        <p>Саша</p>
+                        <p>Арарат</p>
+                        <p>Бишкек, 9 мкр 41 51</p>
+                        <p>2000 сом</p>
+                        <p>мебель</p>
+                        <p>Портер</p>
+                    </div>
+                </Link>
                 <Pagination/>
             </div>
         </div>
