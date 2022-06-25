@@ -145,7 +145,7 @@ export const Registr = () => {
           )}
         </div>
 
-        <Link to="/main"><Button
+        <Link to="/main/events"><Button
           text="ЗАРЕГИСТРИРОВАТЬСЯ"
           disabled={
             !(
