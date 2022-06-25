@@ -1,0 +1,63 @@
+.link{
+  color: #4254EC;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 40px;
+  white-space: nowrap;
+}
+.active_link{
+  color: #4254EC;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 40px;
+  border-bottom: #4254EC 3px solid;
+  
+  white-space: nowrap;
+}
+
+#dragon {
+    background: white;
+    position: relative;
+    animation: myfirst 7s ;
+    animation-direction: initial;
+
+  }
+  
+  @keyframes myfirst {
+    0%   {left: -900px; top: 0;}
+// //   50%  { left: 750px; top: 0px; }
+//   50%  {left: 200px; top: 400px;}
+  100%  { left: 1200px; top: 300px; }
+//   100% {left: 0px; top: 0px;}
+//   50%  {left: 200px; top: 400px;}
+//   75%  { left: 0px; top: 200px;}
+//   100% {left: 0px; top: 0px;}
+  }
+
+#dragon {
+    position: absolute;
+    top: -100;
+    left: -1000px;
+    overflow: hidden;
+}
+.dragon {
+    width: 800px;
+}
+.container {
+  width: 1090px;
+  background: #FDFDFF;
+  opacity: 0.99;
+  box-shadow: 0 0 16px rgba(44, 44, 44, 0.15);
+  border-radius: 35px;
+  position: relative;
+}
+.container_data_flexed {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
