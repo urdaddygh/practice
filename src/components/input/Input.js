@@ -13,7 +13,8 @@ const Input = ({
   width,
   margin,
   minWidth,
-  minHeight
+  minHeight,
+  color
 }) => {
 
   return (
@@ -22,6 +23,7 @@ const Input = ({
       <div className={s.gradient} style={{maxWidth:maxWidth, width:width, margin:margin, minWidth:minWidth, minHeight:minHeight}}>
         <input
           className={s.input}
+          style={{color:color}}
           placeholder={placeholder}
           value={value}
           onChange={onChange}

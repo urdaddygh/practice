@@ -1,11 +1,12 @@
 import { useFormik } from "formik";
 import React, { useCallback, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../../components/button/Button";
 import Input from "../../components/input/Input";
 import s from "./Registr.module.scss";
 
 export const Registr = () => {
+  const navigate=useNavigate()
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -18,7 +19,7 @@ export const Registr = () => {
       color: "",
     },
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      navigate("/auth")
     },
   });
 
@@ -145,7 +146,7 @@ export const Registr = () => {
           )}
         </div>
 
-        <Link to="/main/events"><Button
+      <Button
           text="ЗАРЕГИСТРИРОВАТЬСЯ"
           disabled={
             !(
@@ -160,7 +161,7 @@ export const Registr = () => {
             )
           }
           type="submit"
-        /></Link>
+        />
         {/* </div> */}
       </form>
     </div>

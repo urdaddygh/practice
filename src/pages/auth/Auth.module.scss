@@ -8,6 +8,13 @@
     display: flex;
     z-index: 999;
     padding: 60px 0;
+    position: relative;
+}
+.wrong{
+    position: absolute;
+    top: 400px;
+    color: red;
+
 }
 .register_text {
     font-weight: 700;

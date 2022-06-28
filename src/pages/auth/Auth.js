@@ -6,7 +6,7 @@ import registerStyles from "../register/Registr.module.scss";
 import s from "./Auth.module.scss";
 import Button from "../../components/button/Button";
 import "../../styles/baseStyles.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {empty_checkbox} from "../../images";
 
 const Auth = () => {
@@ -16,9 +16,12 @@ const Auth = () => {
   const toggle = () => {
     setOpen(!open);
   };
+  const navigate = useNavigate()
   const checkboxToggle = () => {
     setCheckbox(!checkbox);
   };
+
+  const [check, setCheck] = useState(false)
 
   const formik = useFormik({
     initialValues: {
@@ -26,7 +29,13 @@ const Auth = () => {
       password: "",
     },
     onSubmit: (data) => {
-      console.log(data);
+      {
+        data.password === "qwerty" && data.phone === "+996505614949" ? (
+          navigate("/main/events")
+        ) : (
+          setCheck(true)
+        );
+      }
     },
   });
   return (
@@ -44,6 +53,7 @@ const Auth = () => {
               value={formik.values.phone}
               onChange={formik.handleChange}
               name="phone"
+              color={check==true&&"red"}
             />
             <div className={s.input_cont}>
               <Input
@@ -53,6 +63,7 @@ const Auth = () => {
                 value={formik.values.password}
                 onChange={formik.handleChange}
                 name="password"
+                color={check==true&&"red"}
               />
               {open === false ? (
                 <div onClick={toggle} className={registerStyles.open_eye} />
@@ -64,6 +75,8 @@ const Auth = () => {
             {/* <div className={s.forgot_p_cont}>
               <Link to="/auth/ForgotPassword" className="grey_text">Забыли пароль?</Link>
             </div> */}
+
+           {check===true&& <p className={s.wrong}>Неправильный пароль</p>} 
 
             <Button
               type="submit"
