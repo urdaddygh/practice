@@ -10,7 +10,7 @@ import s from ".././defaultEvents/DefaultEvents.module.scss";
 import ss from "./ChangeEvents.module.scss";
 import { ChangeForm } from "./ChangeForm";
 
-export const Card = ({ name, date, phone, adress, type, note_man, id }) => {
+export const Card = ({ name, date, phone, adress, type, note_man, id, new_order }) => {
   const [card, setCard] = useState(true);
 
   const toggle = () => {
@@ -40,8 +40,11 @@ export const Card = ({ name, date, phone, adress, type, note_man, id }) => {
           </p>
           {/* <p className={s.text_date}>29.06.2022г. - 30.06.2022г.</p> */}
           <p className={s.text_title}>Имя заказчика:...</p>
+        <div className={s.arrow}>
+        <p className={s.new_order}>{new_order}</p>
           <div className={s.arrow_button} onClick={toggle}>
             <ForwardButton />
+          </div>
           </div>
         </div>
       ) : (

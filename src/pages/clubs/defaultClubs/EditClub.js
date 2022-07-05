@@ -39,7 +39,7 @@ const EditClub = () => {
                 </div> */}
                 <Button onClick={handleOpenSuccessModal} width="100%" text="СОХРАНИТЬ"/>
             </div>
-            {openSuccessModal && <SuccessModal open={openSuccessModal} handleClose={handleCloseSuccessModal} title="Вы успешно отредактировали данные о клубе!"/>}
+            {openSuccessModal && <SuccessModal open={openSuccessModal} handleClose={handleCloseSuccessModal} title="Вы успешно отредактировали данные о заказе!"/>}
         </>
 
     );

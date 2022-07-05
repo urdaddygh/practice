@@ -37,6 +37,7 @@ export const ChangeEvents = () => {
             type={el.type}
             note_man={el.note_man}
             id={el.id}
+            new_order={el.new_order}
           />
         ))}
       </div>

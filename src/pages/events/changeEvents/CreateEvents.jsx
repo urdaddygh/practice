@@ -19,6 +19,7 @@ export const CreateEvents = ({ active, setActive }) => {
       adress: "",
       type: "",
       price: "",
+      new_order:"Только что создали!"
     },
     onSubmit: (values) => {
       dispatch(addOrder(values))

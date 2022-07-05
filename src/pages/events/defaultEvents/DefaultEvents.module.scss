@@ -69,10 +69,20 @@
     .text_title {
         margin-bottom: 60px;
     }
-
+    .arrow{
+        display: flex;
+        justify-content: space-between;
+    }
     .arrow_button {
         text-align: right;
         margin-right: 30px;
+    }
+    .new_order{
+        margin-top: 15px;
+        color: #4254EC;
+        // color: green;
+        margin-left: 30px;
+        font-size: 20px;
     }
 
     .info {
