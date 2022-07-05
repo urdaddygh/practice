@@ -1,26 +1,31 @@
 import { useFormik } from "formik";
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import BackButton from "../../../components/arrowButton/BackButton";
 import Button from "../../../components/button/Button";
 import Input from "../../../components/input/Input";
+import { changeOrder } from "../../../redux/action";
 import s from "./ChangeEvents.module.scss";
 
 export const ChangeForm = ({ onClick }) => {
+  const dispatch = useDispatch()
+  const oneOrder = useSelector(state=>state.order.oneOrder[0])
   const formik = useFormik({
     initialValues: {
-      name: "Евгений",
-      number: "+996505551144",
-      comment: "Пожалуйста будьте аккуратны",
-      adress: "Бишкек, 7 микр. 20 школа",
-      type: "Мебель",
-      price: "2000 сом",
-      // agePre: "С 9",
-      // ageAfter: "По 15",
+      name: oneOrder.name,
+      number: oneOrder.phone,
+      comment: oneOrder.note_man,
+      adress: oneOrder.adress,
+      type: oneOrder.type,
+      price: oneOrder.price,
     },
     onSubmit: (values) => {
+      // dispatch(changeOrder(values))
+      // console.log(values)
       alert(JSON.stringify(values, null, 2));
     },
   });
+  // console.log(oneOrder)
   return (
     <div className={s.cont}>
  

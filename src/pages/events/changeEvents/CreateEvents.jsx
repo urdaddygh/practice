@@ -4,19 +4,26 @@ import { useFormik } from "formik";
 import s from "./ChangeEvents.module.scss";
 import Button from "../../../components/button/Button";
 import BackButton from "../../../components/arrowButton/BackButton";
+import { useDispatch } from "react-redux";
+import { addOrder } from "../../../redux/action";
 
 export const CreateEvents = ({ active, setActive }) => {
+  const dispatch = useDispatch()
   const formik = useFormik({
     initialValues: {
+      id:"",
       name: "",
-      number: "",
-      comment: "",
+      date:"",
+      phone: "",
+      note_man: "",
       adress: "",
       type: "",
       price: "",
     },
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      dispatch(addOrder(values))
+      setActive(false)
+      // alert(JSON.stringify(values, null, 2));
     },
   });
   return (
@@ -37,19 +44,19 @@ export const CreateEvents = ({ active, setActive }) => {
           placeholder="+996"
 
           valueLabel="Номер заказчика"
-          value={formik.values.number}
+          value={formik.values.phone}
           onChange={formik.handleChange}
-          name="number"
+          name="phone"
           width="600px"
         />
         <Input
           placeholder="Что-то..."
 
           valueLabel="Комментарий"
-          value={formik.values.comment}
+          value={formik.values.note_man}
           onChange={formik.handleChange}
           width="600px"
-          name="comment"
+          name="note_man"
         />
         <Input
           placeholder="Введите адрес"
@@ -78,65 +85,36 @@ export const CreateEvents = ({ active, setActive }) => {
           width="600px"
           name="price"
         />
-        {/* <Input
-          placeholder="Главный судья"
-          valueLabel="Информация о мероприятии - главный судья"
-          value={formik.values.referee}
+        <Input
+          placeholder="Введите Id"
+
+          valueLabel="ID"
+          value={formik.values.id}
           onChange={formik.handleChange}
           width="600px"
-          name="referee"
+          name="id"
         />
         <Input
-          placeholder="Секретарь"
-          valueLabel="Информация о мероприятии- секретарь"
-          value={formik.values.secretary}
+          placeholder="Введите дату"
+
+          valueLabel="Дата"
+          value={formik.values.date}
           onChange={formik.handleChange}
           width="600px"
-          name="secretary"
+          name="date"
         />
-        <Input
-          placeholder="Примечание"
-          valueLabel="Примечание"
-          value={formik.values.note}
-          onChange={formik.handleChange}
-          width="600px"
-          name="note"
-        /> */}
-
-        {/* <div className={s.age}>
-          <div>
-            <Input
-              placeholder="с"
-              width="285px"
-              valueLabel="Возрастная категория"
-              value={formik.values.agePre}
-              onChange={formik.handleChange}
-              name="agePre"
-            />
-
-            <Input
-              placeholder="по"
-              valueLabel=""
-              width="285px"
-              value={formik.values.ageAfter}
-              onChange={formik.handleChange}
-              name="ageAfter"
-            />
-            <span className={s.age_span}></span>
-          </div>
-        </div> */}
         <Button
           text="СОЗДАТЬ"
           disabled={
             !(
               formik.values.name &&
               formik.values.date &&
-              formik.values.place &&
-              formik.values.referee &&
-              formik.values.secretary &&
-              formik.values.ageAfter &&
-              formik.values.agePre &&
-              formik.values.note
+              formik.values.price &&
+              formik.values.phone &&
+              formik.values.type &&
+              formik.values.id &&
+              formik.values.date &&
+              formik.values.note_man
             )
           }
           width="600px"
